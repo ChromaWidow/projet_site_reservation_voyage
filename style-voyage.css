@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #fdf8ef;
+    color: #333;
+}
+
+/* HEADER */
+.hero {
+    background-image: url('images/banniere.png');
+    background-size: 1650px;      /* L'image sera entièrement visible */
+    background-repeat: no-repeat;  /* Pas de répétition */
+    width: 100%;                   /* Toute la largeur */
+    height: 750px;                 /* Ajuste selon la taille réelle de ton image */
+    padding: 20px 40px;
+}
+
+
+
+
+
+.small-hero {
+    padding-bottom: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: px;
+    width: auto;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: #1e3a5f;
+}
+
+.logo span {
+    font-size: 14px;
+    font-style: italic;
+    color: #444;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    background: #1e3a5f;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* TITRES */
+.page-title {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-title h2 {
+    font-size: 34px;
+    color: #1e3a5f;
+}
+
+/* CARDS */
+.card-box {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* TABLE */
+.reservations-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.reservations-table th {
+    background: #f7d046;
+    padding: 15px;
+    color: #1e3a5f;
+}
+
+.reservations-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.reservations-table tr:hover {
+    background: #fdf3c4;
+}
+
+/* FORMULAIRES */
+.form-box {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.form-box button {
+    background: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* ACTIONS */
+.actions a {
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-edit {
+    
+    color: rgb(0, 0, 0);
+}
+
+.btn-delete {
+    
+    color: rgb(0, 0, 0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+.page-title p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* INTRO */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h2 {
+    font-size: 40px;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* ALERT MESSAGE */
+.alert {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #dff0d8;
+    color: #2d662d;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* DESTINATIONS */
+.destinations {
+    padding: 40px 60px;
+}
+
+.destinations h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1e3a5f;
+}
+
+/* GRID 8 CARTES (2 LIGNES DE 4) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 15px 0 5px;
+    color: #1e3a5f;
+}
+
+.card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f7d046;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* RESERVATION FORM */
+.reservation {
+    background: #fff6d9;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.reservation h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #1e3a5f;
+    margin-bottom: 30px;
+}
+
+.reservation-form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.reservation-form input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.reservation-form .row {
+    display: flex;
+    gap: 15px;
+}
+
+.reservation-form button {
+    background: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-form .row {
+        flex-direction: column;
+    }
+}
